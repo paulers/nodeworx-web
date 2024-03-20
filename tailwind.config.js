@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'selector',
     content: ["./**/*.{html,js}"],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'hero-pattern': "url('/marbles.webp')"
+            }
+        },
     },
     plugins: [],
 }
