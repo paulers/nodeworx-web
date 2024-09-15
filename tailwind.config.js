@@ -5,7 +5,8 @@ export default {
     theme: {
         extend: {
             backgroundImage: {
-                'hero-pattern': "url('/marbles.webp')"
+                'hero-pattern': "url('/marbles.webp')",
+                'divider-pattern': "url('/marbles2.webp')"
             }
         },
     },
