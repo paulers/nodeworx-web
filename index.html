@@ -1,145 +1,192 @@
-<!doctype html>
-<html id="htmlElement" class="light" lang="en">
-
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Software Development / Nodeworx</title>
-    <meta name="description"
-        content="Empowering businesses with apps and APIs, our software development agency crafts digital experiences to drive customer success." />
-    <meta name="keywords" content="software development, microsoft store apps, REST APIs" />
-    <meta name="robots" content="index, follow">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeWorx | Professional Tools for Everyday Life</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+<body>
 
-<body class="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white">
-    <div class="h-screen flex flex-col px-16">
-        <nav class="py-8 flex justify-between">
-            <strong class="uppercase">Nodeworx</strong>
-            <label for="themeSwitcher" class="relative inline-flex cursor-pointer select-none items-center">
-                <input type="checkbox" name="themeSwitcher" id="themeSwitcher" class="sr-only"
-                    onchange="toggleDarkMode()" />
-                <div class="shadow-two flex items-center justify-center rounded-md bg-neutral-100 dark:bg-neutral-800">
-                    <span
-                        class="flex h-9 w-9 items-center justify-center rounded bg-blue-600 text-white dark:bg-neutral-800 dark:text-white">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_3128_692)">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 0C8.36819 0 8.66667 0.298477 8.66667 0.666667V2C8.66667 2.36819 8.36819 2.66667 8 2.66667C7.63181 2.66667 7.33333 2.36819 7.33333 2V0.666667C7.33333 0.298477 7.63181 0 8 0ZM8 5.33333C6.52724 5.33333 5.33333 6.52724 5.33333 8C5.33333 9.47276 6.52724 10.6667 8 10.6667C9.47276 10.6667 10.6667 9.47276 10.6667 8C10.6667 6.52724 9.47276 5.33333 8 5.33333ZM4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12C5.79086 12 4 10.2091 4 8ZM8.66667 14C8.66667 13.6318 8.36819 13.3333 8 13.3333C7.63181 13.3333 7.33333 13.6318 7.33333 14V15.3333C7.33333 15.7015 7.63181 16 8 16C8.36819 16 8.66667 15.7015 8.66667 15.3333V14ZM2.3411 2.3424C2.60145 2.08205 3.02356 2.08205 3.28391 2.3424L4.23057 3.28906C4.49092 3.54941 4.49092 3.97152 4.23057 4.23187C3.97022 4.49222 3.54811 4.49222 3.28776 4.23187L2.3411 3.28521C2.08075 3.02486 2.08075 2.60275 2.3411 2.3424ZM12.711 11.7682C12.4506 11.5078 12.0285 11.5078 11.7682 11.7682C11.5078 12.0285 11.5078 12.4506 11.7682 12.711L12.7148 13.6577C12.9752 13.918 13.3973 13.918 13.6577 13.6577C13.918 13.3973 13.918 12.9752 13.6577 12.7148L12.711 11.7682ZM0 8C0 7.63181 0.298477 7.33333 0.666667 7.33333H2C2.36819 7.33333 2.66667 7.63181 2.66667 8C2.66667 8.36819 2.36819 8.66667 2 8.66667H0.666667C0.298477 8.66667 0 8.36819 0 8ZM14 7.33333C13.6318 7.33333 13.3333 7.63181 13.3333 8C13.3333 8.36819 13.6318 8.66667 14 8.66667H15.3333C15.7015 8.66667 16 8.36819 16 8C16 7.63181 15.7015 7.33333 15.3333 7.33333H14ZM4.23057 11.7682C4.49092 12.0285 4.49092 12.4506 4.23057 12.711L3.28391 13.6577C3.02356 13.918 2.60145 13.918 2.3411 13.6577C2.08075 13.3973 2.08075 12.9752 2.3411 12.7148L3.28776 11.7682C3.54811 11.5078 3.97022 11.5078 4.23057 11.7682ZM13.6577 3.28521C13.918 3.02486 13.918 2.60275 13.6577 2.3424C13.3973 2.08205 12.9752 2.08205 12.7148 2.3424L11.7682 3.28906C11.5078 3.54941 11.5078 3.97152 11.7682 4.23187C12.0285 4.49222 12.4506 4.49222 12.711 4.23187L13.6577 3.28521Z"
-                                    fill="currentColor" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_3128_692">
-                                    <rect width="16" height="16" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </span>
-                    <span class="text-body-color flex h-9 w-9 items-center justify-center rounded dark:bg-blue-600">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.0547 1.67334C8.18372 1.90227 8.16622 2.18562 8.01003 2.39693C7.44055 3.16737 7.16651 4.11662 7.23776 5.07203C7.30901 6.02744 7.72081 6.92554 8.39826 7.60299C9.07571 8.28044 9.97381 8.69224 10.9292 8.76349C11.8846 8.83473 12.8339 8.5607 13.6043 7.99122C13.8156 7.83502 14.099 7.81753 14.3279 7.94655C14.5568 8.07556 14.6886 8.32702 14.6644 8.58868C14.5479 9.84957 14.0747 11.0512 13.3002 12.053C12.5256 13.0547 11.4818 13.8152 10.2909 14.2454C9.09992 14.6756 7.81108 14.7577 6.57516 14.4821C5.33925 14.2065 4.20738 13.5846 3.312 12.6892C2.41661 11.7939 1.79475 10.662 1.51917 9.42608C1.24359 8.19017 1.32569 6.90133 1.75588 5.71038C2.18606 4.51942 2.94652 3.47561 3.94828 2.70109C4.95005 1.92656 6.15168 1.45335 7.41257 1.33682C7.67423 1.31264 7.92568 1.44442 8.0547 1.67334ZM6.21151 2.96004C5.6931 3.1476 5.20432 3.41535 4.76384 3.75591C3.96242 4.37553 3.35405 5.21058 3.00991 6.16334C2.66576 7.11611 2.60008 8.14718 2.82054 9.13591C3.04101 10.1246 3.5385 11.0301 4.25481 11.7464C4.97111 12.4627 5.87661 12.9602 6.86534 13.1807C7.85407 13.4012 8.88514 13.3355 9.8379 12.9913C10.7907 12.6472 11.6257 12.0388 12.2453 11.2374C12.5859 10.7969 12.8536 10.3081 13.0412 9.78974C12.3391 10.0437 11.586 10.1495 10.8301 10.0931C9.55619 9.99813 8.35872 9.44907 7.45545 8.5458C6.55218 7.64253 6.00312 6.44506 5.90812 5.17118C5.85174 4.4152 5.9575 3.66212 6.21151 2.96004Z"
-                                fill="currentColor" />
-                        </svg>
-                    </span>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center shadow-lg">
+                    <span class="text-white font-bold text-xl">N</span>
                 </div>
-            </label>
-        </nav>
-        <section id="hero" class="py-2 text-left grow flex flex-col justify-end">
-            <h2 class="leading-none my-4 uppercase">Actually useful<br />Apps and APIs<br />you can use now</h2>
-        </section>
-        <section class="py-4 h-1/2">
-            <div class="bg-center bg-hero-pattern rounded-lg h-full"></div>
-        </section>
-    </div>
-    <section class="px-16 pt-8">
-        <h1 class="uppercase">Our Work</h1>
-    </section>
-    <section class="relative px-16 pb-8">
-        <div class="sticky top-[95vh]">
-            <span title="Images coming soon...">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="1.5">
-                        <path
-                            d="m8.699 10.646l-.104-.49m4.995-.55l-.104-.49M8.5 15.57c1.258.316 2.686.316 4.123-.069c1.436-.385 2.672-1.099 3.604-2.001" />
-                        <path d="m12.587 15.637l.478.974a1.5 1.5 0 1 0 2.693-1.322l-.46-.935" />
-                        <path
-                            d="M3 18.561v-6.517C3 7.05 7.03 3 12 3s9 4.05 9 9.044v6.517c0 1.162-.967 2.519-2 2c-.835-.42-2.223-.52-3 0c-.874.585-2.126.585-3 0c-.885-.593-1.649-.57-2.5 0c-.874.585-2.126.585-3 0c-.777-.52-1.665-.42-2.5 0c-1.033.519-2-.838-2-2" />
-                    </g>
-                </svg>
-            </span>
+                <span class="text-2xl font-extrabold tracking-tight text-brand-primary uppercase">NodeWorx</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#home" class="hover:text-brand-accent transition-colors">Home</a>
+                <a href="#products" class="hover:text-brand-accent transition-colors">Our Apps</a>
+                <a href="mailto:contact@nodeworx.io" class="px-5 py-2.5 bg-brand-primary text-white rounded-full hover:bg-opacity-90 transition-all shadow-md">Get in Touch</a>
+            </div>
         </div>
-        <div class="ml-80 flex flex-col">
-            <a class="hover:bg-blue-100 dark:hover:bg-blue-600 dark:border-blue-100 border-b border-blue-600 px-16 py-16 flex flex-col gap-4"
-                href="https://rapidapi.com/nodeworx-nodeworx-default/api/geofencing2/" target="_blank">
-                <header class="flex gap-2 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                        <path fill="currentColor"
-                            d="M26 22a3.86 3.86 0 0 0-2 .57l-3.09-3.1a6 6 0 0 0 0-6.94L24 9.43a3.86 3.86 0 0 0 2 .57a4 4 0 1 0-4-4a3.86 3.86 0 0 0 .57 2l-3.1 3.09a6 6 0 0 0-6.94 0L9.43 8A3.86 3.86 0 0 0 10 6a4 4 0 1 0-4 4a3.86 3.86 0 0 0 2-.57l3.09 3.1a6 6 0 0 0 0 6.94L8 22.57A3.86 3.86 0 0 0 6 22a4 4 0 1 0 4 4a3.86 3.86 0 0 0-.57-2l3.1-3.09a6 6 0 0 0 6.94 0l3.1 3.09a3.86 3.86 0 0 0-.57 2a4 4 0 1 0 4-4m0-18a2 2 0 1 1-2 2a2 2 0 0 1 2-2M4 6a2 2 0 1 1 2 2a2 2 0 0 1-2-2m2 22a2 2 0 1 1 2-2a2 2 0 0 1-2 2m10-8a4 4 0 1 1 4-4a4 4 0 0 1-4 4m10 8a2 2 0 1 1 2-2a2 2 0 0 1-2 2" />
-                    </svg>
-                    <h6>Geofencing API</h6>
-                </header>
-                <main>
-                    <p>Geofencing API provides functionality used to detect whether a coordinate is inside a circle or
-                        polygon. Accept batch requests.</p>
-                </main>
-            </a>
-            <a class="hover:bg-blue-100 dark:hover:bg-blue-600 dark:border-blue-100 border-b border-blue-600 px-16 py-16 flex flex-col gap-4"
-                href="https://rapidapi.com/nodeworx-nodeworx-default/api/certificate-toolkit/" target="_blank">
-                <header class="flex gap-2 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                        <path fill="currentColor"
-                            d="M26 22a3.86 3.86 0 0 0-2 .57l-3.09-3.1a6 6 0 0 0 0-6.94L24 9.43a3.86 3.86 0 0 0 2 .57a4 4 0 1 0-4-4a3.86 3.86 0 0 0 .57 2l-3.1 3.09a6 6 0 0 0-6.94 0L9.43 8A3.86 3.86 0 0 0 10 6a4 4 0 1 0-4 4a3.86 3.86 0 0 0 2-.57l3.09 3.1a6 6 0 0 0 0 6.94L8 22.57A3.86 3.86 0 0 0 6 22a4 4 0 1 0 4 4a3.86 3.86 0 0 0-.57-2l3.1-3.09a6 6 0 0 0 6.94 0l3.1 3.09a3.86 3.86 0 0 0-.57 2a4 4 0 1 0 4-4m0-18a2 2 0 1 1-2 2a2 2 0 0 1 2-2M4 6a2 2 0 1 1 2 2a2 2 0 0 1-2-2m2 22a2 2 0 1 1 2-2a2 2 0 0 1-2 2m10-8a4 4 0 1 1 4-4a4 4 0 0 1-4 4m10 8a2 2 0 1 1 2-2a2 2 0 0 1-2 2" />
-                    </svg>
-                    <h6>Certificate Toolkit API</h6>
-                </header>
-                <main>
-                    <p>Certificate Toolkit contains tools necessary to generate self-signed certificates, inspect
-                        existing certificates, and verify chains.</p>
-                </main>
-            </a>
-            <a class="hover:bg-blue-100 dark:hover:bg-blue-600 dark:border-blue-100 border-b border-blue-600 px-16 py-16 flex flex-col gap-4"
-                href="https://tickertracker.xyz" target="_blank">
-                <header class="flex gap-2 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                        <path fill="currentColor"
-                            d="M8 11h3v12h2V11h3V9H8zm15 4v-2h-3v-2h-2v2h-2v2h2v6a2 2 0 0 0 2 2h3v-2h-3v-6z" />
-                    </svg>
-                    <h6>Ticker Tracker App</h6>
-                </header>
-                <main>
-                    <p>Ticker Tracker is a journaling app for tracking stock, crypto, forex and options trades. Includes
-                        a
-                        calendar with US market holidays, and analytics based off your trading history.</p>
-                </main>
-            </a>
-        </div>
-    </section>
-    <section class="px-16 py-4 h-[30vh]">
-        <div class="bg-center bg-divider-pattern rounded-lg h-full"></div>
-    </section>
-    <section class="px-16 pt-8">
-        <h1 class="uppercase text-right">Our Tech</h1>
-    </section>
-    <section class="px-16 pt-8">
-        <h4 class="text-right">Nodeworx software is written in NodeJS and .NET. We use the latest, most secure and
-            performant packages in
-            all our products. Our APIs are hosted on <a href="https://railway.app" class="underline"
-                target="_blank">Railway</a> and written in .NET. Our web apps are written in Nuxt 3.
-        </h4>
-        <p class="text-right mt-4">You can read more about how we use technology, among other things, on <a
-                href="https://paulers.com" class="underline">our
-                founder's blog</a>.</p>
-    </section>
-    <section class="py-4">
+    </nav>
 
+    <!-- Hero Section -->
+    <header id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Static Decorative shapes -->
+        <div class="absolute top-20 left-10 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 floating" style="animation-delay: 0s;"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 floating" style="animation-delay: 2s;"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-wider mb-6">Built for Everyone</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                    Professional Tools <span class="gradient-text">for Real People.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
+                    We build intuitive, high-performance applications designed to solve real challenges without the unnecessary complexity. Simple tools for your everyday success.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#products" class="px-8 py-4 bg-brand-primary text-white rounded-xl font-bold text-center shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">Explore Our Apps</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full aspect-4/3 rounded-3xl overflow-hidden shadow-2xl relative group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-primary to-brand-accent opacity-10"></div>
+                    <!-- Neighborhood/Approachability Image -->
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1000" alt="Comfortable modern setting" class="w-full h-full object-cover">
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="glass p-6 rounded-2xl shadow-xl flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-bold text-brand-primary uppercase tracking-widest">Our Mission</p>
+                                <p class="text-sm text-slate-600">Making complexity accessible.</p>
+                            </div>
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-accent shadow-sm">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Apps Section (Grid Update) -->
+    <section id="products" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold mb-4">Our Apps</h2>
+                <div class="w-20 h-1.5 bg-brand-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Ticker Tracker Card -->
+                <div class="scroll-reveal bg-slate-50 rounded-4xl p-8 flex flex-col border border-slate-100 shadow-sm hover:shadow-xl transition-all h-full">
+                    <div class="w-full aspect-video bg-white rounded-2xl shadow-inner overflow-hidden flex items-center justify-center p-6 border border-slate-100 mb-8">
+                        <div class="text-center">
+                            <span class="text-4xl block mb-2">📈</span>
+                            <span class="font-bold text-slate-400 text-sm uppercase tracking-widest">Ticker Tracker</span>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 text-brand-primary">Ticker Tracker</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Completely free trade journaling. Data visualization and actionable feedback report for day traders.</p>
+                        <ul class="space-y-3 mb-8 text-slate-600 text-sm">
+                            <li class="flex items-center font-medium">
+                                <div class="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3 shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                                </div>
+                                Trade journaling
+                            </li>
+                            <li class="flex items-center font-medium">
+                                <div class="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3 shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                                </div>
+                                Calendar view
+                            </li>
+                            <li class="flex items-center font-medium">
+                                <div class="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3 shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                                </div>
+                                Data visualization and reports
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://tickertracker.xyz" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-brand-primary text-white rounded-xl font-bold hover:shadow-lg transition-all w-full md:w-auto self-start">
+                        Check it out <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+
+                <!-- ClaimReady Card -->
+                <div class="scroll-reveal bg-slate-50 rounded-4xl p-8 flex flex-col border border-slate-100 shadow-sm transition-all h-full">
+                    <div class="w-full aspect-video bg-white rounded-2xl shadow-inner overflow-hidden flex items-center justify-center p-6 border border-slate-100 mb-8">
+                        <div class="text-center">
+                            <span class="text-4xl block mb-2">📑</span>
+                            <span class="font-bold text-slate-400 text-sm uppercase tracking-widest">ClaimReady</span>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 text-brand-primary">ClaimReady</h3>
+                        <p class="text-slate-600 mb-8 leading-relaxed">Capture your home's value in minutes with lightning-fast AI room scans and instant object labeling.</p>
+                        <ul class="space-y-3 mb-8 text-slate-600 text-sm">
+                            <li class="flex items-center font-medium">
+                                <div class="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3 shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                                </div>
+                                Secure, audit-proof PDF report
+                            </li>
+                            <li class="flex items-center font-medium">
+                                <div class="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3 shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                                </div>
+                                Capture object images in a blitz
+                            </li>
+                            <li class="flex items-center font-medium">
+                                <div class="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center mr-3 shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                                </div>
+                                Privacy-first, we don't store your data
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inline-flex items-center justify-center px-6 py-3 bg-slate-200 text-slate-500 rounded-xl font-bold cursor-default w-full md:w-auto self-start">
+                        Coming soon
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <script type="module" src="/main.js"></script>
+
+    <!-- Simple Footer -->
+    <footer class="bg-white border-t border-slate-100 py-16">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+                    <div class="w-8 h-8 bg-brand-primary rounded-md flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">N</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight text-brand-primary uppercase">NodeWorx</span>
+                </div>
+                <p class="text-slate-400 text-sm">&copy; 2026 NodeWorx. All rights reserved.</p>
+            </div>
+            
+            <div class="flex space-x-6 text-sm font-bold text-slate-500">
+                <a href="#" class="hover:text-brand-accent">Privacy (WIP)</a>
+                <a href="#" class="hover:text-brand-accent">Terms (WIP)</a>
+                <a href="mailto:contact@nodeworx.io" class="hover:text-brand-accent">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
-
 </html>
